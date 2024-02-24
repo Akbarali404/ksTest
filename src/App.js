@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Test from './components/Test/Test';
+import Login from './components/Login/Login';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
+  const time = new Date();
+  time.setSeconds(time.getSeconds() + 3600);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route path='/' element={<Login />} />
+          <Route path='test' element={<Test expiryTimestamp={time} />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

@@ -1,0 +1,68 @@
+.all {
+    text-align: center;
+}
+.score {
+    margin: 20px auto;
+    width: 90%;
+    display: flex;
+    background-color: gray;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.chiziq {
+    background-color: orange;
+    text-align: center;
+    color: white;
+    transition: 0.4s;
+}
+.buttons {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+}
+.buttons button {
+    width: 500px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #3b82f6;
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.buttons button:hover {
+    background-color: #00368d;
+}
+.none {
+    display: none;
+}
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
+    color: white;
+}
+.timer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+.result {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+}
