@@ -15,6 +15,20 @@ function Test({ expiryTimestamp }) {
     width: `${sNum * 4}%`,
   };
 
+ let baho;
+  if (22 <= score && score <= 25) {
+    baho = 5;
+  }
+  if (18 <= score && score <= 21) {
+    baho = 4;
+  }
+  if (14 <= score && score <= 17) {
+    baho = 3;
+  }
+  if (1 <= score && score <= 13) {
+    baho = 2;
+  }
+  
   const javob = (str) => () => {
     if (sNum < 25) {
       setSNum(sNum + 1);
@@ -37,7 +51,7 @@ function Test({ expiryTimestamp }) {
       setNone(true);
       const user = JSON.parse(localStorage.getItem('user'));
   
-      const text = `Ism: ${user[0]} %0AFamiliya: ${user[1]} %0A${score} tasi to'g'ri`;
+      const text = `Ism: ${user[0]} %0AFamiliya: ${user[1]} %0A${score} tasi to'g'ri %0ABahosi:${baho}`;
   
       const token = "6014626057:AAEfxdF9240_AoFoloNRhO5sKEDZVl6t8gg";
       const chat_id = -4175369950;
@@ -50,19 +64,7 @@ function Test({ expiryTimestamp }) {
     }   
   }, [none, isRunning]);
 
-  let baho;
-  if (22 <= score && score <= 25) {
-    baho = 5;
-  }
-  if (18 <= score && score <= 21) {
-    baho = 4;
-  }
-  if (14 <= score && score <= 17) {
-    baho = 3;
-  }
-  if (1 <= score && score <= 13) {
-    baho = 2;
-  }
+ 
   
   return (
     <div>
