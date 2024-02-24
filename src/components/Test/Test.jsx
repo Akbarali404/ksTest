@@ -40,7 +40,7 @@ function Test({ expiryTimestamp }) {
       const text = `Ism: ${user[0]} %0AFamiliya: ${user[1]} %0A${score} tasi to'g'ri`;
   
       const token = "6014626057:AAEfxdF9240_AoFoloNRhO5sKEDZVl6t8gg";
-      const chat_id = 1160697825;
+      const chat_id = -4175369950;
   
       const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${text}`;
   
